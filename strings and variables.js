@@ -91,4 +91,21 @@ console.log('1\n2\n3\n4\n');
 
 console.log("\u043E")
 
+var s="STRING"
+console.log(s.length);
+console.log(s[4]);
+
+var s6 = s[0]+s[1]+"X";
+console.log(s6)
+//  primeri indexovanja i dodavanja stringa unutar index brojeva //
+s[1] = "x";
+console.log(s) 
+console.log(s.length)
+
+var number ="1"
+console.log(number++);
+
+
+
+
 
