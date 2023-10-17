@@ -64,8 +64,38 @@ console.log(typeof (istrue + digit))
 // Nan - convertuje true u 1 u pozitivnu vrednost, a undefined se dodaje na vrednost i automatski postaje Nan //
 console.log(undefined + true)
 
+var a =5;
+var b = 10;
 
+/*if (b>a) {
 
+console.log(b)
+}
+else if(a>b){
+    console.log(a)
+
+}
+else{
+    console.log("jednaki");
+}
+*/
+// vezba if statmenta i ternarnog operatora//
+var div2 =9;
+
+if( div2 %2===0) {
+
+    console.log("even")
+}
+else {
+
+    console.log("odd")
+}
+
+div2%2===0 ? 'even':'odd'
+
+// primer ternarnog //
+
+var a= 15;
 
 
 
