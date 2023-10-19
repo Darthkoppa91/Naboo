@@ -312,14 +312,14 @@ for(var i = 5; i>=1; i--){
 
 
 //4///
-var sum = 0;
+/*var sum = 0;
 var niz =[1,2,3,4,5,6,7,8,9,10];
 
 for (var i = 0; i<=10; i++) {
     if(niz[i] %2===0) {
         console.log(niz[i]);
         sum = sum+ i ;
-        console.log('the number '+ niz[i] +' is even ');
+        //console.log('the number '+ niz[i] +' is even ');
     }
 }
 
@@ -335,7 +335,7 @@ for( var i = 0 ; i <broj.length; i++){
 
 }
 
-console.log(sum )
+//console.log(sum )
 
 
 //6.// 
@@ -344,6 +344,37 @@ var str = "Eclip542se";
 for(var i =0; i<str.length; i++) {
     if ( str[i] != +str[i]){
     count +=1;    
+//}
+//}
+//console.log(count);
+//
+
+
+//7/ write code to find index in array is letter "C"
+
+
+var array=[1,3,32,"$","g","h","x","C","c",66,23,"h2"];
+var findLetter="C"
+for(var i=0;i<array.length; i++){
+
+
+    //if(array[i] === "c" || array[i] ==="C"){
+   // console.log(i);
+   // }
+//}
+//if(typeof array[i]==="string"){
+    //if(array[i].toLowerCase() == findLetter){
+        //console.log(i);
+        //}
+   // }
+*/
+   //1/ 
+
+   var a =[5,-4, 2,3,7]
+   var e =3;
+
+   for ( var i =0; i<a.length; i++){
+   if(a===e) {
+    console.log("yes")
+   }
 }
-}
-console.log(count);
