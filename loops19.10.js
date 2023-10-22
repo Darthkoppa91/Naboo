@@ -80,10 +80,10 @@
 
 //10 - resenje je suma = 0  zavrseno cela petlja 
 //11.//
-for ( var i =0; i<7; i+=2){
-  console.log(i);
-  i++;
-}
+//for ( var i =0; i<7; i+=2){
+  //console.log(i);
+  //i++;
+//}
 //11. resenje - 0, 3,6 // u prvoj iteraciji gledamo  samo prvu levu stranu deklaracije a ignorisemo desnu, nakon interacije onda prelazimo na desnu stranu a levu ignorisemo.
 
 ///12.
@@ -124,6 +124,96 @@ for ( var i =0; i<7; i+=2){
 
 //22//
 
-for (var i = 0; i<30; i=i+3) {
-  console.log( i+2 );
+//for (var i = 0; i<30; i=i+3) {
+ // console.log( i+2 );
+//}
+
+var strZ =['coa','laza','Milance','Vedran','Jovan','Marko'];
+var index = 0;
+var randomStr=strZ[0];
+for (var i=0;i<strZ.length;i++){
+  if(randomStr.length<strZ[i].length){
+    randomStr =strZ[i];
+    index=i;
+  }
 }
+console.log(index)
+console.l
+
+
+var niz =[44,46,57,17,24,4,11];
+for(var i=1;i < niz.length; i++){
+  for(var j=0; j< i; j++) {
+    if (niz[i] < niz[j]){
+      var temp =niz[i];
+      niz[i] = niz[j];
+      niz[j]=temp;
+    }
+  }
+
+}
+console.log(niz)
+
+//var niz=[2,5];
+
+
+//niz[0] = niz[1]
+//niz[1]=novaVrednost
+
+//console.log(niz)
+
+
+
+//var niz =[44,46,57,17,24,4,11];
+//console.log(niz.sort(function(a,b))) {
+ // return (a,b)
+//}
+//var n =niz.length;
+//var swapped ;
+//do{
+//swapped=false;
+//for ( var i=0; i <n-1; i++){
+ // if(niz[i] > niz[i+1]){
+   // var tmp=niz[i];
+    //niz[i] = niz[i+1];
+    //niz[i+1]= tmp;
+  //}
+//}
+//} while (swapped);
+//console.log(niz)
+//console.log(niz.sort())
+
+
+
+//for( i=0; i<5;i++){
+  for(j=0; j<5;j++) {
+    console.log('A')
+
+    }
+    console.log('B')
+//}
+
+// zadaci za test //
+
+
+//console.log(typeof 5+5); ---> type of number5
+
+//console.log(10>5>1) -false 
+
+//var x ;
+//console.log(b) - ref  error();
+
+//var x = 50;
+//var y= 35;
+//console.log(x+y+"y=" +x+y) ---> 85y= 5035                    
+//
+//console.log(50+20+"0"*1+2);
+
+var i = 0o41;
+console.log(i)
+
+
+var x = 5, y= 22, z=55;
+z=x=y=0
+console.log(x,y,z) 
+
