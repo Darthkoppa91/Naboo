@@ -51,36 +51,36 @@ console.log(findMaxNumber([1, 2, 17, 9, 24, 0, 123,2,4532,]))
 //2.  pisi fun-ju find koja ocekuje kao parametar niz i element koji zelimo da pronadjemo u nizu, f-ja treba da prati element i index na kom se nalazi.//
 
 
-function findIndex(array, element =4) {
-    var foundIndex = -1;
-    var foundElement;
-    for( var i = 0; i <array.length; i++){
+//function findIndex(array, element =4) {
+   // var foundIndex = -1;
+    //var foundElement;
+    //for( var i = 0; i <array.length; i++){
         if (array[i] === element) {
             foundIndex = i;
             foundElement= array[i];
 
             }
-        } // moze i bez return i stavis console.log
-        return "found element is:" +  foundElement +  " Index is :" + foundIndex
-    }
-    console.log(findIndex([1,2,3,4,5,6,7], 7));
+      //  } // moze i bez return i stavis console.log
+        //return "found element is:" +  foundElement +  " Index is :" + foundIndex
+//    }
+  //  console.log(findIndex([1,2,3,4,5,6,7], 7));
 
     //3. provera dal je pbroj paran ili neparan - funkcja //
 
 
-    function checkOdd(number){
+  //  function checkOdd(number){
 
     if (number%2 ===0 ) {
         return true;
     }
         return false;
-    }
+  //  }
  
 //console.log(checkOdd(6));
 
 //4.zadatak - napisati funkciju koja kao parametar ocekuje niz , treba da vrati niz svih parnih elemenata //
 
-function findEvenNumbers(niz){
+/*function findEvenNumbers(niz){
     var evenNumbers = [];
 
     for( var i = 0; i<niz.length; i++){
@@ -92,3 +92,8 @@ function findEvenNumbers(niz){
     return evenNumbers;
 }
 console.log(findEvenNumbers([1,0,3,2,5,4,19,20]));
+
+*/
+function type (par){
+    return typeof(par)
+}
