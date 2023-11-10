@@ -1,0 +1,38 @@
+function generateObject (genre,duration, rating, published,title) {
+        
+    var object = {};
+
+    object.genre = genre;
+    object.duration = duration;
+    object.rating = rating;
+    object.published = published;
+    object.title = title;
+    object,changedRating =function (newRating){
+        object.rating = newRating;
+    }
+    object.getTitle = function (){
+        return object.title;
+    }
+
+    return object;
+}
+var sacuvaniObjekat = generateObject("Action", 120, 8.3, 2008, "jaws 4");
+//console.log(sacuvaniObjekat)
+var sacuvaniObjekat2 = generateObject("Comedy", 140, 6.3, 2018, "riksha");
+//console.log(sacuvaniObjekat2)
+
+var movieArray = [];
+movieArray.push( sacuvaniObjekat,sacuvaniObjekat2)
+console.log(movieArray)
+
+for ( var i = 0 ; i<movieArray.length;i++){
+    var film = movieArray[i];
+    if (film.genre === "Comedy"){
+        film.changedRating(9.9);
+        
+    }
+
+}
+console.log(movieArray)
+
+
