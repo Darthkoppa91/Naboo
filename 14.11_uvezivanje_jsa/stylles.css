@@ -1,0 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    background-color: aquamarine;
+    color: orange
+}
