@@ -1,0 +1,71 @@
+@font-face {
+    font-family:'Slava' ;
+    src: url(/zamolxis-ii-font/ZamolxisIi-L8V5.ttf);
+}
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vh; */
+    min-height: 100vh;
+    gap: 40px;
+}
+button {
+
+    padding: 15px 35px;
+    font-size: 2rem;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    color: orange;
+    font-weight: 700;
+    cursor: pointer;
+}
+.timer {
+    font-size: 60px;
+    font-weight: 700;
+    padding:20px;
+    color:white;
+
+}
+.reset {
+    background-color: orange;
+    color:white;
+    border:none;
+    
+}
+.lazar-bg {
+    background-image: url(/IMG_1073\ \(1\).jpg);
+    background-size: 200px;
+    
+}
+
+.message {
+
+    font-size: 45px;
+    font-family: 'Slava';
+    position: absolute;
+    bottom: 40px;
+    padding: 20px 50px;
+    background-color: brown;
+    color: rgb(236, 236, 62);
+    border: 0.5px solid rgb(235, 206, 37);
+    border-radius: 49px 0 50px 0;
+    /* background-image: url(/IMG_1073\ \(1\).jpg); */
+    width: 10%
+    background-position: cover;
+   
+}
+.d-none {
+    display: none;
+
+}
