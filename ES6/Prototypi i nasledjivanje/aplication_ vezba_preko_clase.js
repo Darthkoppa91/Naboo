@@ -72,3 +72,32 @@ console.log(webApp.getData());
 console.log(webApp.ReactBased());
 console.log(webApp.isCCLicence());
 console.log(webApp.showStars());
+
+
+
+// errors //
+
+// va a = 5 ; // Syntax error
+//undefined(); // typer Error
+
+// console.log(a) // Reference Error
+
+try {
+    console.log(1)
+    console.log(2)
+    console.log(3)
+    console.log(a14)
+    a();
+    // pronadji cod, ako uspes prolazimo do kraja ako ne na catch hvataj greske //
+    console.log(a);
+} catch (err) {
+    //ako nema greski catch je ignorisan ,ako se greska desi onda TRY metoga je zaustavljena i catch ( err) krece da trazi.
+    // throw new Error ("Doslo je do greske "); // throw metoda je nacin ispisivanja i customizovanja greski i poruka //
+}
+
+finally {
+    console.log("ovo sve svakako izvrsava bez obrzia dal je doslo do greske ili ne ")
+}
+//ukoliko je greska u sred try block - blok nece zaustaviti scriptu imamo sansu da handlujemo
+
+
