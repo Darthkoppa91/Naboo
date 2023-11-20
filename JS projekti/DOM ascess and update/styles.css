@@ -1,0 +1,23 @@
+.container {
+
+    background-color: aquamarine;
+
+}
+ul {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-evenly;
+    margin:10px auto;
+    gap: 5px;
+   list-style-type: none;
+   border: 1px solid none;
+   background-color:white;
+   border-radius: 10px;
+
+li {
+    border-radius: 10px;
+
+}

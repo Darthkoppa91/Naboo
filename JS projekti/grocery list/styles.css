@@ -1,0 +1,31 @@
+* {
+    margin: 0 auto ;
+    padding: 5px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(95, 212, 212);
+}
+.productWrapper {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.total {
+    padding: 1px 10px;
+    margin: 1px, auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
+title {
+    color: wheat;
+    text-decoration: overline;
+}
