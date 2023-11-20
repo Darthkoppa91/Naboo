@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+div {
+    border:1px solid black;
+    /* border-radius: 15px; */
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+img {
+
+    width: 100%;
+    height: 100%;
+
+}
+button {
+
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
