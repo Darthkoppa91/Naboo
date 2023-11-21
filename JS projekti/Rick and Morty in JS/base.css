@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image:url(https://nova.rs/wp-content/uploads/2022/08/15/1660552239-Rik-i-Morti.PNG) ;
+    min-height: 100vh;
+    
+}
+h1 {
+    text-align: center;
+    color: antiquewhite;
+    margin:30px 0;
+    font-size:48px;
+}

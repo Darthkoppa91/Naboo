@@ -1,0 +1,45 @@
+
+.wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 20px auto;
+    padding: 20px;
+    height: 80vh;
+    width: 80%;
+    background-color: aquamarine;
+    border-radius: 5px;
+    overflow: scroll;
+    gap: 10px;
+}
+
+
+
+.wrapper > div {
+    background-color: white;
+    border-radius:  5px;
+    padding: 10px;
+    text-align: center;
+}
+.wrapper  h2 {
+    margin: 10px 0;
+    color:rgb(3, 30, 16);
+
+}
+.wrapper button {
+    padding: 8px 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius:  5px;
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
