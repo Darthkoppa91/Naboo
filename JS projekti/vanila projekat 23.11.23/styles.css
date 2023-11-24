@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+aside {
+  background-color: rgb(228, 64, 64);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 50px;
+  
+  padding: 20px;
+}
+
+aside.opened {
+  width: 40vw;
+  /* transform: translate(5px, 25px); */
+}
+
+.friendsList {
+  display: none;
+}
+.opened .friendsList {
+  display: block;
+}
+header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 12px;
+  background-color: #ec6f75;
+}
+
+main {
+  background-color: aliceblue;
+  width: 100%;
+  flex: 1;
+  padding-left: 20px;
+}
+
+main > container {
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+main > container > div {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(240, 79, 79, 0.925);
+  cursor: pointer;
+}
+main > container > div:hover {
+  transform: scale(1.2);
+  transition: ease-in 1s;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 12px;
+  background-color: #ec6f75;
+}
