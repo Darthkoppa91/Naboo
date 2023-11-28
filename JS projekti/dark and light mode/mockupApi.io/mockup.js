@@ -2,6 +2,9 @@ const MOCK_API_SQUAD_ENDPOINT =
   "https://6560813183aba11d99d0f328.mockapi.io/api/v1/squad";
 
 const main = document.querySelector("main");
+const headerBtn = document.querySelector(".darkLightMode");
+const gridView = document.querySelector(".grid");
+
 
 const fetchSquad = async () => {
   const res = await fetch(MOCK_API_SQUAD_ENDPOINT);
@@ -10,6 +13,7 @@ const fetchSquad = async () => {
   console.log(data);
   makeCards(data);
 };
+
 fetchSquad();
 
 function makeCards(data) {
@@ -28,7 +32,7 @@ function makeCards(data) {
     btn.textContent = "DELETE";
     btnPost.textContent = "SUBMIT";
 
-    asquadCard.append(img, p, btn, btnPost);
+    squadCard.append(img, p, btn, btnPost);
 
     main.append(squadCard);
 
@@ -41,9 +45,9 @@ function makeCards(data) {
       window.location.reload();
     });
 
-    btn.addEventListener("click", async () => {
+    btnPost.addEventListener("click", async () => {
       const res = await fetch(
-        "`https://6560813183aba11d99d0f328.mockapi.io/api/v1/players",
+        `https://6560813183aba11d99d0f328.mockapi.io/api/v1/players`,
         {
           method: "POST",
           headers: {
@@ -51,10 +55,48 @@ function makeCards(data) {
           },
           body: JSON.stringify({
             name: el.name,
-            surname: el.surname,
+            surname: "Pasha",
+            position: "Miljenko",
+            kitNumber: "45",
+            age: "21",
+            marketValue: "1.2 mill",
           }),
         }
       );
+       const data = await res.json()
+       console.log(data);
     });
   });
 }
+
+headerBtn.addEventListener("click", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    localStorage.removeItem("theme");
+    document.body.classList.toggle("dark");
+  } else {
+    localStorage.setItem("theme", "dark");
+    document.body.classList.toggle("dark");
+  }
+});
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.toggle("dark");
+  }
+
+  if (localStorage.getItem("layout") === "list") {
+    document.body.classList.toggle("list");
+  }
+});
+
+
+gridView.addEventListener("click", () => {
+  if(localStorage.getItem("layout") ==="list") {
+    localStorage.removeItem("layout");
+    main.classList.toggle("list");
+  }
+  else {
+    localStorage.setItem("layout", "list");
+    main.classList.toggle("list");
+  }
+})
