@@ -1,0 +1,18 @@
+.main-div {
+    flex: 1;
+    width: 100%;
+    color: #3B3561;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-content: center;
+ 
+}
+.gren {
+    color: green;
+}
+.red {
+    color:red;
+}

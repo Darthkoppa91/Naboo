@@ -1,0 +1,12 @@
+.card-div {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 35%;
+    padding: 10px;
+
+
+    & img {
+        width: 80%;
+    }
+    
+}
