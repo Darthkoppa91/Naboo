@@ -1,12 +1,15 @@
-.card-div {
+.card-car {
     border: 1px solid black;
     border-radius: 15px;
-    width: 35%;
+    width: 45%;
     padding: 10px;
 
 
     & img {
-        width: 80%;
+        width: 100%;
     }
     
+}
+.style-none {
+    display: none;
 }
