@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://images3.alphacoders.com/812/812062.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    background-color: #3E78B2;
+    padding: 30px 100px;
+    font-size: 36px;
+    color: white;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color:rgb(133, 11, 133);
+    width: 100%;
+    padding: 30px 100px;
+    font-size: 36px;
+    color: white;
+}
+.all-characters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card {
+    color: #e5ebf1;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    
+    text-align: center;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    width: 25%;
+
+    
+}
+.card button {
+    background-color: #C792DF;
+    border-radius: 10px;
+    padding: 7px;   
+    border: none;
+    
+
+}
+img {
+    
+    max-width: 100%;
+}
